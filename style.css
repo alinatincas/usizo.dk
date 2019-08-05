@@ -1,0 +1,756 @@
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+body{
+    background-color: #f4f0ef;
+    font-family: 'Arial', sans-serif;
+}
+/* Navigation */
+#logo {
+    width: 150px;
+    height: auto;
+    transition: all .3s ease-in-out; 
+}
+#logo:hover{
+    transform: scale(1.1);
+}
+#menu{
+    background-color: #ede8e7;
+    font-size: 20px;
+    font-weight: 650;
+}
+#uk-flag{
+    margin-right: 6px;
+    margin-left: 25px;
+    width: auto;
+    height: 25px;
+}
+#danish-flag{
+    width: auto;
+    height: 25px;
+}
+.flags{   
+    transition: all .3s ease-in-out;
+}
+.flags:hover{
+    transform: scale(1.2);
+}
+.flag-icons{
+    justify-content: center;
+    margin-left: 98%; 
+}
+
+#hamburger-menu{
+    text-align: center;
+    
+}
+.nav-link{
+    color: #000000;
+}
+.nav-link:hover{
+    color: #00bce4;
+}
+#menu-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.align_center{
+    text-align: center;
+}
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+  }
+/* Changing the border and color of the hamburger menu */
+
+.custom-toggler.navbar-toggler {
+    border: none;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 188, 228)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.close_btn{
+    transition: all .3s ease-in-out;
+}
+.close_btn:hover{
+    transform: scale(1.2);
+}
+/*When the hamburger menu collapses, close button appears: changing its colors*/
+.navbar-toggler>.close {
+    display:inline;
+    color: #00bce4;
+    
+}
+.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+    display:none;
+}
+.navbar-collapse{
+    margin-top: auto;
+}
+.navbar-toggler-icon{
+    float: right;
+    transition: all .3s ease-in-out; 
+
+}
+.navbar-toggler-icon:hover{
+    transform: scale(1.2);
+}
+.navbar-toggler{
+    margin-top: -30px;
+}
+/* Header */
+#header_img{
+    width: 100%;
+    height: auto;
+}
+#header_text{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    text-align: center;
+    
+}
+.header_p1{
+    font-size: 35px;
+    font-weight: 32;
+    line-height: 1;
+}
+.header_p2{
+    color: #00bce4;
+    font-size: 27px;
+    font-weight: 500;
+}
+/* Top button */
+#return_top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #00bce4;
+    width: 55px;
+    height: 55px;
+    display: none;
+    border-radius: 35px;
+    transition: all 0.3s ease;
+}
+.arrow_top{
+    color: #ede8e7;
+    position: relative;
+    left: 15px;
+    top: 13px;
+    font-size: 28px;
+    transition: all 0.5s ease;
+}
+#return_top:hover {
+    background: #0098B9;
+}
+.arrow_top:hover {
+    color: #ffffff;
+    top: 2px;
+}
+/* About */
+#about_btn{
+    background-color: #00bce4;
+    border: none;
+    float: right;
+    transition: all .3s ease-in-out;
+    margin-top: 5px;
+}
+#about_btn:hover{
+    transform: scale(1.1);
+}
+.about_content{
+    margin-top: -15px;
+}
+
+/*About section*/
+.titles_style{
+    font-size: 19px;
+    font-weight: 650;
+    margin-top: 50px;
+    
+}
+#separate_line{
+    width: 50%;
+    height: auto;
+    margin-top: -3%;
+}
+.pharagraphs_style{
+    text-align: center;
+}
+
+/* Features */
+.features_icon{
+    width: 75px;
+    height: auto;
+    margin-top: 7%;
+}
+.features_icon_text{
+    display: inline-table;
+    line-height: 2;
+    margin-bottom: 30px;
+}
+.feature_icons_wrapper{
+    margin: 0 auto;
+    padding-left: 15%;
+}
+.features_row1{
+    margin-bottom: -38px;
+}
+.features_row2{
+    margin-bottom: -62px;   
+}
+.features_row3{
+    margin-bottom: -45px;
+}
+.features_row4{
+    margin-bottom: -20px;
+}
+
+/* Tablet platform */
+.ipad_center{
+    width: 70%;
+    height: auto;    
+}
+.center-block{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.icons_under_tablet{
+    display: inline-flex;
+    list-style-type: none;
+    margin-top: 12px;
+}
+.underneath_table{
+    margin-left: -35px;
+}
+.tablet_icons{
+    height: 38px;
+    width: auto;
+    margin-left: 22px;
+    margin-top: 0px;
+    transition: all .3s ease-in-out; 
+    -webkit-filter: grayscale(85%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(85%);
+}
+.tablet_icons:hover{
+    transform: scale(1.3);
+}
+.tablet_icons.active{
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
+}
+
+.tablet_span_info{
+    color: #00bce4;
+}
+.features_tablet, .underneath_table, .tablet_info{
+    text-align: center;
+}
+.show_tablet{ 
+    width: 52%;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    top: 8%;
+    left: 0;
+    right: 0; 
+}
+/* Pricing */
+.pricing_packages{
+    height: 400px;
+    width: auto;
+}
+.pricing_text{
+    margin-top: 10px;
+}
+.izinga_link{
+    color: #000000;
+}
+.izinga_link:hover{
+    color: #00bce4; 
+    text-decoration: none; 
+}
+.more_info{
+    margin-bottom: -30px;   
+}
+/* Facebook integration */
+.facebook_integration{
+    text-align: center;
+}
+.facebook_iframe{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, 0) 70%); 
+}
+.integration_wrap{
+    margin-bottom: -35px;
+}
+/* Footer */
+footer{
+    background-color: #ede8e7;
+    text-align: center;
+    margin-top: 15px;
+}
+.footer_title{
+    font-size: 20px;
+    font-weight: 650;
+    margin-top: 20px;
+}
+.footer_copyright{
+    font-size: 20px;
+    font-weight: 650;
+    text-align: center;
+    color: #00bce4;
+    margin-top: -10px; 
+    margin-bottom: 20px;
+}
+.footer_icon{
+    color: #000000;
+    padding: 8px;
+    font-size: 36px;
+    text-align: center;
+    text-decoration: none;
+    margin: 42px 2px;
+    transition: all .3s ease-in-out;
+}
+.footer_icon:hover{
+    transform: scale(1.2);
+}
+.footer_icon:hover{
+    text-decoration: none;
+    color: #00bce4;  
+}
+p{
+    margin-bottom: 0rem;
+    padding: 2px;
+} 
+.more_info{
+    margin: 0;
+    padding: 0;
+}   
+@media screen and (max-width: 2800px){
+    .flag-icons{
+        margin-left: 96.5%;
+    }
+}
+@media screen and (max-width: 2400px){
+    .flag-icons{
+        margin-left: 96%;
+    }
+}
+@media screen and (max-width: 2000px){
+    .flag-icons{
+        margin-left: 95%;
+    }
+}
+@media screen and (max-width: 1600px){
+    .flag-icons{
+        margin-left: 94%;
+    }
+}
+/* Laptop with HiDPI screen + others */
+@media screen and (max-width: 1440px) { 
+    #header_text{
+        top: 26%;
+    }
+    .header_p1{
+        font-size: 40px;    
+    }
+    .header_p2{
+        font-size: 32px;    
+    }
+    .flag-icons{
+        margin-left: 93%;
+    }
+}
+/* Laptop with MDPI screen + others */
+@media screen and (max-width: 1280px) { 
+    #header_text{
+        top: 23%;
+    }
+    .header_p1{
+        font-size: 36px;
+    }
+    .header_p2{
+        font-size: 29px;
+    }
+    .flag-icons{
+        margin-left: 92%;
+    }
+}
+@media screen and (max-width: 1200px){
+    .feature_icons_wrapper{
+        padding-left: 3%;
+    }
+}
+@media screen and (max-width: 1024px){ 
+    .flag-icons{
+        text-align: center;
+        margin-left: 90%;
+    }
+   
+    #separate_line {
+        width: 33%;
+        margin-top: -4%;
+    }
+
+    .navbar-toggler-icon {
+        float: right;
+    }
+    #header_text{
+        top: 20%;
+    }
+    
+    .tablet_icons{
+        height: 34px;
+        margin-left: 20px;
+    }
+    .underneath_table {
+        margin-left: -31px;
+    }  
+}
+@media screen and (max-width: 991px){
+    #uk-flag{
+        margin-top: -27px;
+        height: 27px;
+        width: 27px;
+    }
+    #danish-flag{
+        height: 27px;
+        width: 27px;
+        margin-left: -35px;
+    }
+    .flag-icons {        
+        margin-left: 49%;
+    }
+    #logo{
+        width: 95px;
+    }
+    #menu-wrapper{
+        margin-top: -5%;
+    }
+    .header_p1{
+        font-size: 26px;
+    }
+    .header_p2{
+        font-size: 22px;
+    }
+    .pricing_packages{
+        height: 350px;
+    }
+    .show_tablet{
+        top: 7%;
+    }
+    .flags:hover {
+        transform: scale(1.3);
+    }
+    .features_icon_text{
+        font-size: 12px;
+    }
+    .features_icon {
+        width: 50px;
+        margin-top: 6%;
+    }
+}
+/* Kindle Fire HDX + others */
+@media screen and (max-width: 800px) {   
+    .header_p1{
+        font-size: 27px;
+    }
+    .header_p2{
+        font-size: 22px;
+    }
+    #separate_line {
+        width: 44%;
+        margin-top: -5%;
+    }
+    .tablet_icons{
+        height: 31px;
+        margin-left: 20px;
+    }
+    .underneath_table {
+        margin-left: -30px;
+    }
+    .pricing_packages{
+        height: 330px;
+        margin-bottom: 10px;
+    }
+    #header_img{
+        margin-bottom: -40px;
+    }
+    #header_text{
+        top: 30%;
+    }
+    #menu-wrapper {
+        margin-top: -6%;
+    }
+    .features_icon{
+        width: 60px;
+    }
+}
+@media screen and (max-width: 768px){
+    .tablet_icons {
+        height: 35px;
+        margin-left: 19px;
+    }
+    .underneath_table {
+        margin-left: -26px;
+    }
+    #header_text{
+        top: 35%;
+        left: 45%;
+    }
+    p {
+        padding: 0px;
+        font-size: 14px;
+    }
+    #about_btn{
+        font-size: 13px;
+    }
+    .feature_icons_wrapper{
+        padding-left: 5%;
+    }
+    .features_icon{
+        width: 68px;
+        margin-top: 7%;
+    }
+    .ipad_center{
+        width: 100%;
+    }
+    .show_tablet {
+        width: 74%;
+    }
+}
+@media screen and (max-width: 767px){
+    .header_p1{
+        font-size: 22px;
+    }
+    .header_p2{
+        font-size: 18px;
+    }
+    .feature_icons_wrapper{
+        padding-left: 20%;
+    }
+}
+
+/* Blackberry playbook, Microsoft Lumia 550 + others */
+@media screen and (max-width: 640px) {     
+    .features_icon{
+        width: 55px;
+        margin-top: 7%;
+    }
+    .underneath_table {
+        margin-left: -26px;
+        margin-top: -6px; 
+    }
+    
+    #menu-wrapper {
+        margin-top: -7%;
+    }
+    #return_top{
+        width: 40px;
+        height: 40px;
+        right: 0px;
+    }
+    .arrow_top{
+        left: 10px;
+        top: 8px;
+        font-size: 23px;
+    }
+}
+@media screen and (max-width: 535px){
+    .header_p1{
+        font-size: 20px;
+    }
+    .header_p2{
+        font-size: 17px;
+    }
+    body{
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .feature_icons_wrapper {
+        padding-left: 10%;
+    }
+    .show_tablet{
+        width: 73%;
+    }
+    .tablet_icons{
+        height: 28px;
+    }
+}
+
+/* Nokia N9 smartphone + others */
+@media screen and (max-width: 480px){
+    .header_p1{
+        font-size: 18px;
+    }
+    .header_p2{
+        font-size: 15px;
+    }
+    #menu-wrapper {
+        margin-top: -9%;
+    }
+    #about_btn{
+        margin-top: 6px;
+    }
+    #logo {
+        width: 80px;
+    }
+}
+@media screen and (max-width: 462px){
+    .features_icon_text{
+        font-size: 12px;
+    }
+    .features_icon {
+        width: 43px;
+        margin-top: 6%;
+    }
+}
+/* Nexus 6 smartphone, IPhone 6+, + others */
+@media screen and (max-width: 414px){  
+    .header_p1{
+        font-size: 17px;
+    }
+    .header_p2{
+        font-size: 14px;
+    }
+   
+    .tablet_icons {
+        height: 22px;
+        margin-left: 11px;
+    }
+    #separate_line {
+        width: 68%;
+        margin-top: -8%;
+    }  
+    #menu-wrapper {
+        margin-top: -10%;
+    }
+    #header_text{
+        left: 46%;
+    }
+    .show_tablet {
+        width: 72%;
+    }
+    #menu{
+        font-size: 18px;
+    }
+    .feature_icons_wrapper {
+        padding-left: 7%;
+    }
+    .footer_title{
+        font-size: 18px;
+    }
+    .footer_copyright{
+        font-size: 19px;
+    }
+}
+/* LG Optimus L70 smartphone + others */
+@media screen and (max-width: 384px) { 
+    #header_text{
+        left: 42%;
+    }
+    .tablet_icons {
+        height: 19px;
+        margin-left: 12px;
+    }
+    .feature_icons_wrapper {
+        padding-left: 1%;
+    }   
+}
+@media screen and (max-width: 375px) { 
+    .titles_style{
+        font-size: 17px;
+    }
+    #menu{
+        font-size: 18px;
+    }
+    .show_tablet {
+        width: 71%;
+    } 
+    #uk-flag{
+        height: 23px;
+        width: 23px; 
+        margin-top: -23px; 
+    }
+    #danish-flag{
+        height: 23px;
+        width: 23px;
+        margin-left: -30px;
+    }   
+}
+/* Blackberry smartphone + others */
+@media screen and (max-width: 360px) { 
+    #header_text {
+        left: 45%;
+    }
+    .header_p1{
+        font-size: 14px;
+    }
+    .header_p2{
+        font-size: 11px;
+    }
+    .navbar-toggler-icon{
+        width: 26px;
+    }
+    .features_icon {
+        width: 38px;
+        margin-top: 9%;
+    }
+    #logo {
+        width: 70px;
+    }
+    .features_icon_text {
+        font-size: 11px;
+    }
+
+}
+/* Nokia Lumia 520, IPhone4 smartphone + others */
+@media screen and (max-width: 320px) { 
+    p{
+        font-size: 13px;
+    }
+    .titles_style {
+        font-size: 16px;
+    }
+    #separate_line{
+        margin-top: -11%;
+    }
+    .feature_icons_wrapper {
+        padding-left: 3%;
+    }
+    .underneath_table {
+        margin-left: -21px;
+        margin-top: -10px;
+    }
+    .pricing_packages {
+        height: 300px;
+    }
+    #menu-wrapper {
+        margin-top: -12%;
+    }
+    .features_icon {
+        width: 35px;
+        margin-top: 9%;
+    }
+    .features_icon_text {
+        font-size: 10px;
+    }
+    .integration_wrap{
+        padding-left: 0;
+    }
+    .tablet_icons{
+        margin-left: 5px;
+    }   
+}
+
+
+
+
+
